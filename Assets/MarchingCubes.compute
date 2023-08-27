@@ -1,0 +1,68 @@
+#pragma kernel CSMain
+#include "MarchingTable.hlsl"
+
+
+struct Triangle
+{
+    float3 a, b, c;
+};
+
+RWStructuredBuffer<float> _Weights;
+RWStructuredBuffer<float4> _Points;
+float _IsoLevel;
+AppendStructuredBuffer<Triangle> _Triangles;
+float3 dimensions;
+
+int indexFromCoord(float3 coord)
+{
+    return coord.x + dimensions.x * (coord.y + dimensions.y * coord.z);
+}
+float3 interp(float3 edgeVertex1, float valueAtVertex1, float3 edgeVertex2, float valueAtVertex2)
+{
+    return (edgeVertex1 + (_IsoLevel - valueAtVertex1) * (edgeVertex2 - edgeVertex1) / (valueAtVertex2 - valueAtVertex1));
+}
+
+[numthreads(8,8,8)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= dimensions.x - 1 || id.y >= dimensions.y - 1 || id.z >= dimensions.z - 1)
+    {
+        return;
+    }
+    
+    float cubeValues[8];
+    int cubeIndex = 0;
+    for (int i = 0; i < 8; i++)
+    {
+        cubeValues[i] = _Weights[indexFromCoord(id.xyz + cornerOffsets[i])];
+        if (cubeValues[i] < _IsoLevel)
+            cubeIndex |= (1 << i);
+    }
+    
+    int edges[] = triTable[cubeIndex];
+    for (int i = 0; edges[i] != -1; i += 3)
+    {
+        int idx = indexFromCoord(id.xyz);
+     // First edge lies between vertex e00 and vertex e01
+        int e00 = edgeConnections[edges[i]][0];
+        int e01 = edgeConnections[edges[i]][1];
+
+     // Second edge lies between vertex e10 and vertex e11
+        int e10 = edgeConnections[edges[i + 1]][0];
+        int e11 = edgeConnections[edges[i + 1]][1];
+     
+     // Third edge lies between vertex e20 and vertex e21
+        int e20 = edgeConnections[edges[i + 2]][0];
+        int e21 = edgeConnections[edges[i + 2]][1];
+
+     // worldPos is the coordinate (float3)
+     // of the cube itself in the game world.
+        float3 worldPos = _Points[idx];
+        Triangle tri;
+        tri.a = interp(cornerOffsets[e00], cubeValues[e00], cornerOffsets[e01], cubeValues[e01]) + worldPos;
+        tri.b = interp(cornerOffsets[e10], cubeValues[e10], cornerOffsets[e11], cubeValues[e11]) + worldPos;
+        tri.c = interp(cornerOffsets[e20], cubeValues[e20], cornerOffsets[e21], cubeValues[e21]) + worldPos;
+        _Triangles.Append(tri);
+    }
+
+}
