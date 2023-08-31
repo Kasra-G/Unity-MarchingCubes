@@ -1,0 +1,67 @@
+#pragma kernel GeneratePoints
+#include "Includes/SimplexNoise.hlsl"
+struct Noise
+{
+    int enabled;
+    int is2D;
+    float mask;
+    float amplitude;
+    float3 frequency;
+    float3 offset;
+};
+
+RWStructuredBuffer<Noise> _NoiseLayers;
+RWStructuredBuffer<float> _Weights;
+
+int _NoiseLayersCount;
+float3 dimensions;
+float3 offset;
+float seed;
+float eval(float3 val)
+{
+    float maxY = offset.y + dimensions.y - 1;
+    float minY = offset.y;
+    float base = -val.y / (maxY - minY + 1) * 2;
+    float value = 0;
+    float r = 10.0f / dimensions.x / dimensions.y / dimensions.z;
+    for (int i = 0; i < _NoiseLayersCount; i++)
+    {
+        if (_NoiseLayers[i].enabled < 1)
+        {
+            continue;
+        }
+
+        float3 noiseOffset = _NoiseLayers[i].offset + float3(0.001f, -0.001f, 0.0f) + seed;
+        float3 frequency = _NoiseLayers[i].frequency;
+        float3 amplitude = _NoiseLayers[i].amplitude;
+        float mask = _NoiseLayers[i].mask;
+        
+        float nextValue;
+        if (_NoiseLayers[i].is2D > 0)
+        {
+            float3 val2D = float3(val.x, 0, val.z);
+            nextValue = snoise((val2D + noiseOffset) * r * frequency);
+        }
+        else
+        {
+            nextValue = (snoise((val + noiseOffset) * r * frequency) - 1)/2;
+        }
+        amplitude = lerp(amplitude,  amplitude * clamp(val.y / (maxY - minY) * 2 - .5, 0, 1), mask);
+        nextValue *= amplitude;
+
+        value += nextValue;
+    }
+    return value + base;
+}
+
+[numthreads(8, 8, 8)]
+void GeneratePoints(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= dimensions.x || id.y >= dimensions.y || id.z >= dimensions.z)
+    {
+        return;
+    }
+
+    int i = id.x + id.y * dimensions.x + id.z * dimensions.x * dimensions.y;
+    _Weights[i] += eval(id + offset);
+}

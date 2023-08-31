@@ -1,5 +1,4 @@
-#pragma kernel GeneratePoints
-//
+﻿//
 // Description : Array and textureless GLSL 2D/3D/4D simplex 
 //               noise functions.
 //      Author : Ian McEwan, Ashima Arts.
@@ -106,42 +105,3 @@ float snoise(float3 v)
                                 dot(p2, x2), dot(p3, x3)));
 }
 
-RWTexture3D<float4> Result;
-
-RWStructuredBuffer<float4> points;
-
-float deltatime;
-int octaves;
-float amplitude;
-float3 offset;
-float frequency;
-float persistence;
-float lacunarity;
-float3 dimensions;
-
-float eval(float3 val)
-{
-    float value = 0;
-    float amp = amplitude;
-    float freq = frequency;
-    float r = 10.0f / dimensions.x / dimensions.y / dimensions.z;
-    for (int i = 0; i < octaves; i++)
-    {
-        value += snoise((val + offset + float3(0, 0, 0.00001f)) * r * freq) * amp;
-        value += 1;
-        value /= 2.0f;
-        amp *= persistence;
-        freq *= lacunarity;
-    }
-    value /= octaves + 0.0f;
-    value = clamp(value, 0, 1);
-
-    return value;
-}
-
-[numthreads(8, 8, 8)]
-void GeneratePoints(uint3 id : SV_DispatchThreadID)
-{
-    int i = id.x + id.y * dimensions.x + id.z * dimensions.x * dimensions.y;
-    points[i].w = eval(points[i].xyz);
-}

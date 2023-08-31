@@ -15,15 +15,15 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 43
-    width: 2560
-    height: 1357
+    y: 38
+    width: 1710
+    height: 1069
   m_ShowMode: 4
-  m_Title: Git for Unity
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 1
+  m_Maximized: 0
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -44,8 +44,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2560
-    height: 1357
+    width: 1710
+    height: 1069
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -69,7 +69,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2560
+    width: 1710
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -90,8 +90,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1337
-    width: 2560
+    y: 1049
+    width: 1710
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -114,12 +114,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 2560
-    height: 1307
+    width: 1710
+    height: 1019
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 85
+  controlID: 49
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,12 +139,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2071
-    height: 1307
+    width: 1293.5
+    height: 1019
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 31
+  controlID: 50
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,12 +164,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2071
-    height: 1097
+    width: 1293.5
+    height: 752
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 32
+  controlID: 22
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -187,14 +187,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1855
-    height: 1097
+    width: 1101
+    height: 752
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 14}
   m_Panes:
-  - {fileID: 15}
   - {fileID: 14}
+  - {fileID: 15}
+  - {fileID: 12}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &9
@@ -212,10 +213,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1855
+    x: 1101
     y: 0
-    width: 216
-    height: 1097
+    width: 192.5
+    height: 752
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
@@ -233,24 +234,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1097
-    width: 2071
-    height: 210
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 18}
+    y: 752
+    width: 1293.5
+    height: 267
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
-  - {fileID: 18}
   - {fileID: 13}
-  m_Selected: 1
-  m_LastSelected: 0
+  - {fileID: 18}
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -261,22 +262,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Window
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 2071
+    x: 1293.5
     y: 0
-    width: 489
-    height: 1307
-  m_MinSize: {x: 101, y: 121}
+    width: 416.5
+    height: 1019
+  m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 12}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
-  - {fileID: 12}
-  m_Selected: 1
+  m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
@@ -287,21 +287,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ffb9ccd5681bd841ae77e9e5571f770, type: 3}
+  m_Script: {fileID: 11500000, guid: 924ffcbe75518854f97b48776d0f1939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Git for Unity
-    m_Image: {fileID: 0}
+    m_Text: NormalSurfaceShader
+    m_Image: {fileID: 2800000, guid: 7129268cf102b2f45809905bcb27ce8b, type: 3}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2071
-    y: 73
-    width: 488
-    height: 1286
+    x: 0
+    y: 68
+    width: 1100
+    height: 731
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -312,1234 +312,267 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-  progressMessageClearTime: -1
-  notificationClearTime: -1
-  timeSinceLastRotation: -1
-  currentBranchAndRemoteHasUpdate: 0
-  currentTrackingStatusHasUpdate: 0
-  currentStatusEntriesHasUpdate: 0
-  repositoryProgressHasUpdate: 0
-  appManagerProgressHasUpdate: 0
-  changeTab: 3
-  activeTab: 3
-  initProjectView:
-    hasCompletedInitialCheck: 0
-    isUserDataPresent: 0
-    lastCheckUserChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
-      cacheType: 8
-  branchesView:
-    treeLocals:
-      IsRemote: 0
-      folders:
-        keys:
-        - Local branches
-        values:
-        - path: Local branches
-          label: Local branches
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 0
-          checkState: 0
-      checkedFileNodes:
-        keys: []
-        values: []
-      title: Local branches
-      pathSeparator: /
-      displayRootNode: 1
-      isSelectable: 1
-      isCheckable: 0
-      nodes:
-      - path: Local branches
-        label: Local branches
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-      - path: master
-        label: master
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 1
-        treeIsCheckable: 0
-        checkState: 0
-      selectedNode:
-        path: 
-        label: 
-        level: 0
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-    treeRemotes:
-      IsRemote: 1
-      folders:
-        keys:
-        - Remote branches
-        - origin
-        values:
-        - path: Remote branches
-          label: Remote branches
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 0
-          checkState: 0
-        - path: origin
-          label: origin
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 0
-          checkState: 0
-      checkedFileNodes:
-        keys: []
-        values: []
-      title: Remote branches
-      pathSeparator: /
-      displayRootNode: 1
-      isSelectable: 1
-      isCheckable: 0
-      nodes:
-      - path: Remote branches
-        label: Remote branches
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-      - path: origin
-        label: origin
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-      - path: origin/master
-        label: master
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-      selectedNode:
-        path: 
-        label: 
-        level: 0
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-    mode: 0
-    newBranchName: 
-    scroll: {x: 0, y: 0}
-    disableDelete: 1
-    disableCreate: 1
-    lastLocalAndRemoteBranchListChangedEvent:
-      updatedTimeString: 2023-08-27T20:28:15.840-04:00
-      cacheType: 2
-    lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 2023-08-27T20:28:05.143-04:00
-      cacheType: 1
-    currentBranch:
-      name: master
-      tracking: 
-    currentRemote:
-      name: origin
-      url: git@github.com:Kasra-G/Unity-MarchingCubes.git
-      login: 
-      user: 
-      host: 
-      function: 0
-      token: 
-    localBranches:
-    - name: master
-      tracking: 
-    remoteBranches:
-    - name: origin/master
-      tracking: '[None]'
-  changesView:
-    currentBranchHasUpdate: 0
-    currentStatusEntriesHasUpdate: 0
-    currentLocksHasUpdate: 0
-    commitBody: 
-    commitMessage: 
-    currentBranch: master
-    treeScroll: {x: 0, y: 0}
-    treeChanges:
-      assets:
-        keys: []
-        values: []
-      folders:
-        keys:
-        - UserSettings
-        - UserSettings\Layouts
-        values:
-        - path: UserSettings
-          label: UserSettings
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: UserSettings\Layouts
-          label: Layouts
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-      checkedFileNodes:
-        keys: []
-        values: []
-      title: 
-      pathSeparator: \
-      displayRootNode: 0
-      isSelectable: 1
-      isCheckable: 1
-      isUsingGlobalSelection: 1
-      nodes:
-      - path: 
-        label: 
-        level: -1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings
-        label: UserSettings
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings\Layouts
-        label: Layouts
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings\Layouts\default-2022.dwlt
-        label: default-2022.dwlt
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: UserSettings\Layouts\default-2022.dwlt
-          fullPath: C:\Users\ksgh\unityprojects\test\UserSettings\Layouts\default-2022.dwlt
-          projectPath: UserSettings\Layouts\default-2022.dwlt
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      selectedNode:
-        path: 
-        label: 
-        level: 0
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-    gitStatusEntries:
-    - path: UserSettings\Layouts\default-2022.dwlt
-      fullPath: C:\Users\ksgh\unityprojects\test\UserSettings\Layouts\default-2022.dwlt
-      projectPath: UserSettings\Layouts\default-2022.dwlt
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    changedFilesText: 1 changed file
-    lastCurrentBranchChangedEvent:
-      updatedTimeString: 2023-08-27T20:30:37.296-04:00
-      cacheType: 1
-    lastStatusEntriesChangedEvent:
-      updatedTimeString: 2023-08-27T20:30:55.338-04:00
-      cacheType: 6
-    lastLocksChangedEvent:
-      updatedTimeString: 2023-08-27T20:30:39.996-04:00
-      cacheType: 7
-  historyView:
-    currentLogHasUpdate: 0
-    currentTrackingStatusHasUpdate: 0
-    logEntries:
-    - commitID: fb97c64772fedb7f2efcc681730975088dc0751a
-      mergeA: 
-      mergeB: 
-      authorName: Kasra Ghaffari
-      authorEmail: 18647702+Kasra-G@users.noreply.github.com
-      commitEmail: 18647702+Kasra-G@users.noreply.github.com
-      commitName: Kasra Ghaffari
-      summary: First Commit
-      description: 
-      timeString: 2023-08-27T19:05:55.000-04:00
-      commitTimeString: 2023-08-27T19:42:42.000-04:00
-      changes:
-      - path: Assets\.gitignore
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\.gitignore
-        projectPath: Assets\.gitignore
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Ground.mat
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\Ground.mat
-        projectPath: Assets\Ground.mat
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Ground.mat.meta
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\Ground.mat.meta
-        projectPath: Assets\Ground.mat.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\MarchingCubes.compute
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\MarchingCubes.compute
-        projectPath: Assets\MarchingCubes.compute
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\MarchingCubes.compute.meta
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\MarchingCubes.compute.meta
-        projectPath: Assets\MarchingCubes.compute.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\MarchingTable.hlsl
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\MarchingTable.hlsl
-        projectPath: Assets\MarchingTable.hlsl
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\MarchingTable.hlsl.meta
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\MarchingTable.hlsl.meta
-        projectPath: Assets\MarchingTable.hlsl.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\MaterialShader.compute
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\MaterialShader.compute
-        projectPath: Assets\MaterialShader.compute
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\MaterialShader.compute.meta
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\MaterialShader.compute.meta
-        projectPath: Assets\MaterialShader.compute.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\MeshGenerator.cs
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\MeshGenerator.cs
-        projectPath: Assets\MeshGenerator.cs
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\MeshGenerator.cs.meta
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\MeshGenerator.cs.meta
-        projectPath: Assets\MeshGenerator.cs.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins.meta
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\Plugins.meta
-        projectPath: Assets\Plugins.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\PointCloud.cs
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\PointCloud.cs
-        projectPath: Assets\PointCloud.cs
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\PointCloud.cs.meta
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\PointCloud.cs.meta
-        projectPath: Assets\PointCloud.cs.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\PointGenerator.compute
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\PointGenerator.compute
-        projectPath: Assets\PointGenerator.compute
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\PointGenerator.compute.meta
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\PointGenerator.compute.meta
-        projectPath: Assets\PointGenerator.compute.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scenes.meta
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\Scenes.meta
-        projectPath: Assets\Scenes.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scenes\SampleScene.unity
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\Scenes\SampleScene.unity
-        projectPath: Assets\Scenes\SampleScene.unity
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scenes\SampleScene.unity.meta
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\Scenes\SampleScene.unity.meta
-        projectPath: Assets\Scenes\SampleScene.unity.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Slicer.compute
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\Slicer.compute
-        projectPath: Assets\Slicer.compute
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Slicer.compute.meta
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\Slicer.compute.meta
-        projectPath: Assets\Slicer.compute.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\TextureGenerator.cs
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\TextureGenerator.cs
-        projectPath: Assets\TextureGenerator.cs
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\TextureGenerator.cs.meta
-        fullPath: C:\Users\ksgh\unityprojects\test\Assets\TextureGenerator.cs.meta
-        projectPath: Assets\TextureGenerator.cs.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Packages\manifest.json
-        fullPath: C:\Users\ksgh\unityprojects\test\Packages\manifest.json
-        projectPath: Packages\manifest.json
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Packages\packages-lock.json
-        fullPath: C:\Users\ksgh\unityprojects\test\Packages\packages-lock.json
-        projectPath: Packages\packages-lock.json
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\AudioManager.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\AudioManager.asset
-        projectPath: ProjectSettings\AudioManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\ClusterInputManager.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\ClusterInputManager.asset
-        projectPath: ProjectSettings\ClusterInputManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\DynamicsManager.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\DynamicsManager.asset
-        projectPath: ProjectSettings\DynamicsManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\EditorBuildSettings.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\EditorBuildSettings.asset
-        projectPath: ProjectSettings\EditorBuildSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\EditorSettings.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\EditorSettings.asset
-        projectPath: ProjectSettings\EditorSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\GraphicsSettings.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\GraphicsSettings.asset
-        projectPath: ProjectSettings\GraphicsSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\InputManager.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\InputManager.asset
-        projectPath: ProjectSettings\InputManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\MemorySettings.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\MemorySettings.asset
-        projectPath: ProjectSettings\MemorySettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\NavMeshAreas.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\NavMeshAreas.asset
-        projectPath: ProjectSettings\NavMeshAreas.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\PackageManagerSettings.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\PackageManagerSettings.asset
-        projectPath: ProjectSettings\PackageManagerSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-        projectPath: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\Physics2DSettings.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\Physics2DSettings.asset
-        projectPath: ProjectSettings\Physics2DSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\PresetManager.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\PresetManager.asset
-        projectPath: ProjectSettings\PresetManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\ProjectSettings.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\ProjectSettings.asset
-        projectPath: ProjectSettings\ProjectSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\ProjectVersion.txt
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\ProjectVersion.txt
-        projectPath: ProjectSettings\ProjectVersion.txt
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\QualitySettings.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\QualitySettings.asset
-        projectPath: ProjectSettings\QualitySettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\SceneTemplateSettings.json
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\SceneTemplateSettings.json
-        projectPath: ProjectSettings\SceneTemplateSettings.json
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\TagManager.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\TagManager.asset
-        projectPath: ProjectSettings\TagManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\TimeManager.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\TimeManager.asset
-        projectPath: ProjectSettings\TimeManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\TimelineSettings.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\TimelineSettings.asset
-        projectPath: ProjectSettings\TimelineSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\UnityConnectSettings.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\UnityConnectSettings.asset
-        projectPath: ProjectSettings\UnityConnectSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\VFXManager.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\VFXManager.asset
-        projectPath: ProjectSettings\VFXManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\VersionControlSettings.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\VersionControlSettings.asset
-        projectPath: ProjectSettings\VersionControlSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\XRSettings.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\XRSettings.asset
-        projectPath: ProjectSettings\XRSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: UserSettings\EditorUserSettings.asset
-        fullPath: C:\Users\ksgh\unityprojects\test\UserSettings\EditorUserSettings.asset
-        projectPath: UserSettings\EditorUserSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: UserSettings\Layouts\CurrentMaximizeLayout.dwlt
-        fullPath: C:\Users\ksgh\unityprojects\test\UserSettings\Layouts\CurrentMaximizeLayout.dwlt
-        projectPath: UserSettings\Layouts\CurrentMaximizeLayout.dwlt
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: UserSettings\Layouts\default-2022.dwlt
-        fullPath: C:\Users\ksgh\unityprojects\test\UserSettings\Layouts\default-2022.dwlt
-        projectPath: UserSettings\Layouts\default-2022.dwlt
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: UserSettings\Search.index
-        fullPath: C:\Users\ksgh\unityprojects\test\UserSettings\Search.index
-        projectPath: UserSettings\Search.index
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: UserSettings\Search.settings
-        fullPath: C:\Users\ksgh\unityprojects\test\UserSettings\Search.settings
-        projectPath: UserSettings\Search.settings
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-    statusAhead: 0
-    lastLogChangedEvent:
-      updatedTimeString: 2023-08-27T20:28:05.370-04:00
-      cacheType: 3
-    lastTrackingStatusChangedEvent:
-      updatedTimeString: 2023-08-27T20:28:05.178-04:00
-      cacheType: 5
-    historyControl:
-      scroll: {x: 0, y: 0}
-      entries:
-      - commitID: fb97c64772fedb7f2efcc681730975088dc0751a
-        mergeA: 
-        mergeB: 
-        authorName: Kasra Ghaffari
-        authorEmail: 18647702+Kasra-G@users.noreply.github.com
-        commitEmail: 18647702+Kasra-G@users.noreply.github.com
-        commitName: Kasra Ghaffari
-        summary: First Commit
-        description: 
-        timeString: 2023-08-27T19:05:55.000-04:00
-        commitTimeString: 2023-08-27T19:42:42.000-04:00
-        changes:
-        - path: Assets\.gitignore
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\.gitignore
-          projectPath: Assets\.gitignore
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Ground.mat
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\Ground.mat
-          projectPath: Assets\Ground.mat
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Ground.mat.meta
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\Ground.mat.meta
-          projectPath: Assets\Ground.mat.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\MarchingCubes.compute
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\MarchingCubes.compute
-          projectPath: Assets\MarchingCubes.compute
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\MarchingCubes.compute.meta
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\MarchingCubes.compute.meta
-          projectPath: Assets\MarchingCubes.compute.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\MarchingTable.hlsl
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\MarchingTable.hlsl
-          projectPath: Assets\MarchingTable.hlsl
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\MarchingTable.hlsl.meta
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\MarchingTable.hlsl.meta
-          projectPath: Assets\MarchingTable.hlsl.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\MaterialShader.compute
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\MaterialShader.compute
-          projectPath: Assets\MaterialShader.compute
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\MaterialShader.compute.meta
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\MaterialShader.compute.meta
-          projectPath: Assets\MaterialShader.compute.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\MeshGenerator.cs
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\MeshGenerator.cs
-          projectPath: Assets\MeshGenerator.cs
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\MeshGenerator.cs.meta
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\MeshGenerator.cs.meta
-          projectPath: Assets\MeshGenerator.cs.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins.meta
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\Plugins.meta
-          projectPath: Assets\Plugins.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\PointCloud.cs
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\PointCloud.cs
-          projectPath: Assets\PointCloud.cs
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\PointCloud.cs.meta
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\PointCloud.cs.meta
-          projectPath: Assets\PointCloud.cs.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\PointGenerator.compute
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\PointGenerator.compute
-          projectPath: Assets\PointGenerator.compute
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\PointGenerator.compute.meta
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\PointGenerator.compute.meta
-          projectPath: Assets\PointGenerator.compute.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scenes.meta
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\Scenes.meta
-          projectPath: Assets\Scenes.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scenes\SampleScene.unity
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\Scenes\SampleScene.unity
-          projectPath: Assets\Scenes\SampleScene.unity
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scenes\SampleScene.unity.meta
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\Scenes\SampleScene.unity.meta
-          projectPath: Assets\Scenes\SampleScene.unity.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Slicer.compute
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\Slicer.compute
-          projectPath: Assets\Slicer.compute
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Slicer.compute.meta
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\Slicer.compute.meta
-          projectPath: Assets\Slicer.compute.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\TextureGenerator.cs
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\TextureGenerator.cs
-          projectPath: Assets\TextureGenerator.cs
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\TextureGenerator.cs.meta
-          fullPath: C:\Users\ksgh\unityprojects\test\Assets\TextureGenerator.cs.meta
-          projectPath: Assets\TextureGenerator.cs.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Packages\manifest.json
-          fullPath: C:\Users\ksgh\unityprojects\test\Packages\manifest.json
-          projectPath: Packages\manifest.json
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Packages\packages-lock.json
-          fullPath: C:\Users\ksgh\unityprojects\test\Packages\packages-lock.json
-          projectPath: Packages\packages-lock.json
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\AudioManager.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\AudioManager.asset
-          projectPath: ProjectSettings\AudioManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\ClusterInputManager.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\ClusterInputManager.asset
-          projectPath: ProjectSettings\ClusterInputManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\DynamicsManager.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\DynamicsManager.asset
-          projectPath: ProjectSettings\DynamicsManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\EditorBuildSettings.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\EditorBuildSettings.asset
-          projectPath: ProjectSettings\EditorBuildSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\EditorSettings.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\EditorSettings.asset
-          projectPath: ProjectSettings\EditorSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\GraphicsSettings.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\GraphicsSettings.asset
-          projectPath: ProjectSettings\GraphicsSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\InputManager.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\InputManager.asset
-          projectPath: ProjectSettings\InputManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\MemorySettings.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\MemorySettings.asset
-          projectPath: ProjectSettings\MemorySettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\NavMeshAreas.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\NavMeshAreas.asset
-          projectPath: ProjectSettings\NavMeshAreas.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\PackageManagerSettings.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\PackageManagerSettings.asset
-          projectPath: ProjectSettings\PackageManagerSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-          projectPath: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\Physics2DSettings.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\Physics2DSettings.asset
-          projectPath: ProjectSettings\Physics2DSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\PresetManager.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\PresetManager.asset
-          projectPath: ProjectSettings\PresetManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\ProjectSettings.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\ProjectSettings.asset
-          projectPath: ProjectSettings\ProjectSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\ProjectVersion.txt
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\ProjectVersion.txt
-          projectPath: ProjectSettings\ProjectVersion.txt
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\QualitySettings.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\QualitySettings.asset
-          projectPath: ProjectSettings\QualitySettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\SceneTemplateSettings.json
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\SceneTemplateSettings.json
-          projectPath: ProjectSettings\SceneTemplateSettings.json
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\TagManager.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\TagManager.asset
-          projectPath: ProjectSettings\TagManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\TimeManager.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\TimeManager.asset
-          projectPath: ProjectSettings\TimeManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\TimelineSettings.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\TimelineSettings.asset
-          projectPath: ProjectSettings\TimelineSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\UnityConnectSettings.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\UnityConnectSettings.asset
-          projectPath: ProjectSettings\UnityConnectSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\VFXManager.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\VFXManager.asset
-          projectPath: ProjectSettings\VFXManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\VersionControlSettings.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\VersionControlSettings.asset
-          projectPath: ProjectSettings\VersionControlSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\XRSettings.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\ProjectSettings\XRSettings.asset
-          projectPath: ProjectSettings\XRSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: UserSettings\EditorUserSettings.asset
-          fullPath: C:\Users\ksgh\unityprojects\test\UserSettings\EditorUserSettings.asset
-          projectPath: UserSettings\EditorUserSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: UserSettings\Layouts\CurrentMaximizeLayout.dwlt
-          fullPath: C:\Users\ksgh\unityprojects\test\UserSettings\Layouts\CurrentMaximizeLayout.dwlt
-          projectPath: UserSettings\Layouts\CurrentMaximizeLayout.dwlt
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: UserSettings\Layouts\default-2022.dwlt
-          fullPath: C:\Users\ksgh\unityprojects\test\UserSettings\Layouts\default-2022.dwlt
-          projectPath: UserSettings\Layouts\default-2022.dwlt
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: UserSettings\Search.index
-          fullPath: C:\Users\ksgh\unityprojects\test\UserSettings\Search.index
-          projectPath: UserSettings\Search.index
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: UserSettings\Search.settings
-          fullPath: C:\Users\ksgh\unityprojects\test\UserSettings\Search.settings
-          projectPath: UserSettings\Search.settings
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      statusAhead: 0
-      selectedIndex: -1
-    selectedEntry:
-      commitID: 
-      mergeA: 
-      mergeB: 
-      authorName: 
-      authorEmail: 
-      commitEmail: 
-      commitName: 
-      summary: 
-      description: 
-      timeString: 0001-01-01T00:00:00.000+00:00
-      commitTimeString: 0001-01-01T00:00:00.000+00:00
-      changes: []
-    treeChanges:
-      assets:
-        keys: []
-        values: []
-      folders:
-        keys: []
-        values: []
-      checkedFileNodes:
-        keys: []
-        values: []
-      title: 
-      pathSeparator: /
-      displayRootNode: 0
-      isSelectable: 1
-      isCheckable: 0
-      isUsingGlobalSelection: 0
-      nodes: []
-      selectedNode:
-        path: 
-        label: 
-        level: 0
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-    detailsScroll: {x: 0, y: 0}
-  settingsView:
-    gitPathView:
-      gitPath: 
-      gitLfsPath: 
-      errorMessage: 
-      resetToBundled: 0
-      resetToSystem: 0
-      changingManually: 0
-    hasRemote: 0
-    lastCurrentRemoteChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
-    newRepositoryRemoteUrl: 
-    repositoryRemoteName: 
-    repositoryRemoteUrl: 
-    scroll: {x: 0, y: 0}
-    userSettingsView:
-      gitName: 
-      gitEmail: 
-      newGitName: 
-      newGitEmail: 
-      needsSaving: 0
-      lastCheckUserChangedEvent:
-        updatedTimeString: 
-        cacheType: 0
-    webTimeout: 0
-    gitTimeout: 0
-  locksView:
-    currentRemoteHasUpdate: 1
-    currentStatusEntriesHasUpdate: 0
-    currentLocksHasUpdate: 0
-    keychainHasUpdate: 1
-    locksControl:
-      scroll: {x: 0, y: 0}
-      gitLockEntries: []
-      assets:
-        keys: []
-        values: []
-      gitStatusDictionary:
-        keys: []
-        values: []
-      selectedEntry:
-        gitLock:
-          id: 
-          path: 
-          owner:
-            name: 
-            email: 
-          lockedAtString: 
-        gitFileStatus: 0
-        lockedAt: 1 Jan 0001, 00:00
-    lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2023-08-27T20:30:32.703-04:00
-      cacheType: 1
-    lastLocksChangedEvent:
-      updatedTimeString: 2023-08-27T20:30:35.408-04:00
-      cacheType: 7
-    lastStatusEntriesChangedEvent:
-      updatedTimeString: 2023-08-27T20:30:32.970-04:00
-      cacheType: 6
-    lockedFiles: []
-    gitStatusEntries:
-    - path: .gitattributes
-      fullPath: C:\Users\ksgh\unityprojects\test\.gitattributes
-      projectPath: .gitattributes
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: .gitignore
-      fullPath: C:\Users\ksgh\unityprojects\test\.gitignore
-      projectPath: .gitignore
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: .vsconfig
-      fullPath: C:\Users\ksgh\unityprojects\test\.vsconfig
-      projectPath: .vsconfig
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: UserSettings\Layouts\default-2022.dwlt
-      fullPath: C:\Users\ksgh\unityprojects\test\UserSettings\Layouts\default-2022.dwlt
-      projectPath: UserSettings\Layouts\default-2022.dwlt
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    currentUsername: 
-    unlockFileMenuContent:
-      m_Text: Release Lock
-      m_Image: {fileID: 0}
-      m_Tooltip: 
-    forceUnlockFileMenuContent:
-      m_Text: Release Lock (forced)
-      m_Image: {fileID: 0}
-      m_Tooltip: 
-  hasRemote: 1
-  currentRemoteName: origin
-  currentBranch: master
-  currentRemoteUrl: git@github.com:Kasra-G/Unity-MarchingCubes.git
-  statusAhead: 0
-  statusBehind: 0
-  hasItemsToCommit: 1
-  isTrackingRemoteBranch: 0
-  currentBranchContent:
-    m_Text: master
-    m_Image: {fileID: 0}
-    m_Tooltip: Active branch
-  currentRemoteUrlContent:
-    m_Text: git@github.com:Kasra-G/Unity-MarchingCubes.git
-    m_Image: {fileID: 0}
-    m_Tooltip: Url of the origin remote
-  lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2023-08-27T20:30:37.296-04:00
-    cacheType: 1
-  lastTrackingStatusChangedEvent:
-    updatedTimeString: 2023-08-27T20:30:55.345-04:00
-    cacheType: 5
-  lastStatusEntriesChangedEvent:
-    updatedTimeString: 2023-08-27T20:30:55.338-04:00
-    cacheType: 6
-  pullButtonContent:
-    m_Text: Pull
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  pushButtonContent:
-    m_Text: Push
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  refreshButtonContent:
-    m_Text: Refresh
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  fetchButtonContent:
-    m_Text: Fetch
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  repositoryProgressValue: 0
-  repositoryProgressMessage: 
-  appManagerProgressValue: 0.875
-  appManagerProgressMessage: 
-  primaryConnectionUsername: 
+  m_Selected: 71e20937b85be4e17b5a0bb90a2de27c
+  m_GraphObject: {fileID: 0}
+  m_LastSerializedFileContents: "{\n    \"m_SGVersion\": 3,\n    \"m_Type\": \"UnityEditor.ShaderGraph.GraphData\",\n   
+    \"m_ObjectId\": \"f3c0743e4ae2468292a209e47aa50bdb\",\n    \"m_Properties\":
+    [],\n    \"m_Keywords\": [],\n    \"m_Dropdowns\": [],\n    \"m_CategoryData\":
+    [],\n    \"m_Nodes\": [\n        {\n            \"m_Id\": \"6b941770a29a40b89ff16cc72a3394f0\"\n       
+    },\n        {\n            \"m_Id\": \"82c744ef537046b28a27104b65ce67ea\"\n       
+    },\n        {\n            \"m_Id\": \"4b0082dae9f74a4494a9c57b60c7b7b5\"\n       
+    },\n        {\n            \"m_Id\": \"a5f5708eb6d04d92b8598e5f79a29fc2\"\n       
+    },\n        {\n            \"m_Id\": \"e9b538d76ed8425ba6c0d0d9d3d91154\"\n       
+    },\n        {\n            \"m_Id\": \"13b8bf4672c649269dd22bc9b3496780\"\n       
+    },\n        {\n            \"m_Id\": \"304d66b297f14cc79fa9b4750ae2c399\"\n       
+    },\n        {\n            \"m_Id\": \"cb7fe28a5b064d50945d1beb863a23ad\"\n       
+    },\n        {\n            \"m_Id\": \"9cafa09147124a31b55ca034493e9484\"\n       
+    },\n        {\n            \"m_Id\": \"a42b54683a4d4d439b0a43ace5bfc71c\"\n       
+    },\n        {\n            \"m_Id\": \"6baf0f8866fd4905bb0ae265fa41c888\"\n       
+    }\n    ],\n    \"m_GroupDatas\": [],\n    \"m_StickyNoteDatas\": [],\n    \"m_Edges\":
+    [],\n    \"m_VertexContext\": {\n        \"m_Position\": {\n            \"x\":
+    0.0,\n            \"y\": 0.0\n        },\n        \"m_Blocks\": [\n           
+    {\n                \"m_Id\": \"6b941770a29a40b89ff16cc72a3394f0\"\n           
+    },\n            {\n                \"m_Id\": \"82c744ef537046b28a27104b65ce67ea\"\n           
+    },\n            {\n                \"m_Id\": \"4b0082dae9f74a4494a9c57b60c7b7b5\"\n           
+    }\n        ]\n    },\n    \"m_FragmentContext\": {\n        \"m_Position\": {\n           
+    \"x\": 0.0,\n            \"y\": 200.0\n        },\n        \"m_Blocks\": [\n           
+    {\n                \"m_Id\": \"a5f5708eb6d04d92b8598e5f79a29fc2\"\n           
+    },\n            {\n                \"m_Id\": \"e9b538d76ed8425ba6c0d0d9d3d91154\"\n           
+    },\n            {\n                \"m_Id\": \"13b8bf4672c649269dd22bc9b3496780\"\n           
+    },\n            {\n                \"m_Id\": \"304d66b297f14cc79fa9b4750ae2c399\"\n           
+    },\n            {\n                \"m_Id\": \"cb7fe28a5b064d50945d1beb863a23ad\"\n           
+    },\n            {\n                \"m_Id\": \"9cafa09147124a31b55ca034493e9484\"\n           
+    },\n            {\n                \"m_Id\": \"a42b54683a4d4d439b0a43ace5bfc71c\"\n           
+    },\n            {\n                \"m_Id\": \"6baf0f8866fd4905bb0ae265fa41c888\"\n           
+    }\n        ]\n    },\n    \"m_PreviewData\": {\n        \"serializedMesh\": {\n           
+    \"m_SerializedMesh\": \"{\\\"mesh\\\":{\\\"instanceID\\\":0}}\",\n           
+    \"m_Guid\": \"\"\n        },\n        \"preventRotation\": false\n    },\n   
+    \"m_Path\": \"Shader Graphs\",\n    \"m_GraphPrecision\": 1,\n    \"m_PreviewMode\":
+    2,\n    \"m_OutputNode\": {\n        \"m_Id\": \"\"\n    },\n    \"m_ActiveTargets\":
+    [\n        {\n            \"m_Id\": \"9472727cbd1d422e85db0a6dd6b0dc7f\"\n       
+    }\n    ]\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n   
+    \"m_ObjectId\": \"0aac1180d4d642c9b86f17af74fc40c0\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Metallic\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false,\n   
+    \"m_ShaderOutputName\": \"Metallic\",\n    \"m_StageCapability\": 2,\n    \"m_Value\":
+    0.0,\n    \"m_DefaultValue\": 0.0,\n    \"m_Labels\": []\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.TangentMaterialSlot\",\n    \"m_ObjectId\":
+    \"12a936a2bc18421ba336bbfbf6b4d3f6\",\n    \"m_Id\": 0,\n    \"m_DisplayName\":
+    \"Tangent\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"Tangent\",\n    \"m_StageCapability\": 1,\n    \"m_Value\": {\n        \"x\":
+    0.0,\n        \"y\": 0.0,\n        \"z\": 0.0\n    },\n    \"m_DefaultValue\":
+    {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\": 0.0\n    },\n   
+    \"m_Labels\": [],\n    \"m_Space\": 0\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\": \"13b8bf4672c649269dd22bc9b3496780\",\n   
+    \"m_Group\": {\n        \"m_Id\": \"\"\n    },\n    \"m_Name\": \"SurfaceDescription.BentNormal\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n           
+    \"width\": 0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\":
+    [\n        {\n            \"m_Id\": \"e49660227b3343459288c89118c3a485\"\n       
+    }\n    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.BentNormal\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.Rendering.HighDefinition.ShaderGraph.HDLitData\",\n    \"m_ObjectId\":
+    \"199aa56856254dc0bf19aa1a1aa82e9e\",\n    \"m_RayTracing\": false,\n    \"m_MaterialType\":
+    0,\n    \"m_RefractionModel\": 0,\n    \"m_SSSTransmission\": true,\n    \"m_EnergyConservingSpecular\":
+    true,\n    \"m_ClearCoat\": false\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.Rendering.HighDefinition.ShaderGraph.LightingData\",\n    \"m_ObjectId\":
+    \"2a8ada643e2341c0a6f334cb81c9b1b3\",\n    \"m_NormalDropOffSpace\": 0,\n   
+    \"m_BlendPreserveSpecular\": true,\n    \"m_ReceiveDecals\": true,\n    \"m_ReceiveSSR\":
+    true,\n    \"m_ReceiveSSRTransparent\": false,\n    \"m_SpecularAA\": false,\n   
+    \"m_SpecularOcclusionMode\": 1,\n    \"m_OverrideBakedGI\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\n   
+    \"m_ObjectId\": \"304d66b297f14cc79fa9b4750ae2c399\",\n    \"m_Group\": {\n       
+    \"m_Id\": \"\"\n    },\n    \"m_Name\": \"SurfaceDescription.Metallic\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n           
+    \"width\": 0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\":
+    [\n        {\n            \"m_Id\": \"0aac1180d4d642c9b86f17af74fc40c0\"\n       
+    }\n    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.Metallic\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.Rendering.HighDefinition.ShaderGraph.SystemData\",\n    \"m_ObjectId\":
+    \"40281943927c4b98910fafe2effb96a2\",\n    \"m_MaterialNeedsUpdateHash\": 0,\n   
+    \"m_SurfaceType\": 0,\n    \"m_RenderingPass\": 1,\n    \"m_BlendMode\": 0,\n   
+    \"m_ZTest\": 4,\n    \"m_ZWrite\": false,\n    \"m_TransparentCullMode\": 2,\n   
+    \"m_OpaqueCullMode\": 2,\n    \"m_SortPriority\": 0,\n    \"m_AlphaTest\": false,\n   
+    \"m_TransparentDepthPrepass\": false,\n    \"m_TransparentDepthPostpass\": false,\n   
+    \"m_SupportLodCrossFade\": false,\n    \"m_DoubleSidedMode\": 0,\n    \"m_DOTSInstancing\":
+    false,\n    \"m_CustomVelocity\": false,\n    \"m_Tessellation\": false,\n   
+    \"m_TessellationMode\": 0,\n    \"m_TessellationFactorMinDistance\": 20.0,\n   
+    \"m_TessellationFactorMaxDistance\": 50.0,\n    \"m_TessellationFactorTriangleSize\":
+    100.0,\n    \"m_TessellationShapeFactor\": 0.75,\n    \"m_TessellationBackFaceCullEpsilon\":
+    -0.25,\n    \"m_TessellationMaxDisplacement\": 0.009999999776482582,\n    \"m_Version\":
+    1,\n    \"inspectorFoldoutMask\": 0\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.NormalMaterialSlot\",\n    \"m_ObjectId\": \"461d36dbe06d4c1caaa2f3ebf510fa0c\",\n   
+    \"m_Id\": 0,\n    \"m_DisplayName\": \"Normal\",\n    \"m_SlotType\": 0,\n   
+    \"m_Hidden\": false,\n    \"m_ShaderOutputName\": \"Normal\",\n    \"m_StageCapability\":
+    1,\n    \"m_Value\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\":
+    0.0\n    },\n    \"m_DefaultValue\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n       
+    \"z\": 0.0\n    },\n    \"m_Labels\": [],\n    \"m_Space\": 0\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.Rendering.HighDefinition.ShaderGraph.BuiltinData\",\n   
+    \"m_ObjectId\": \"48b656e2e5da431cb62bbb6477b6477b\",\n    \"m_Distortion\":
+    false,\n    \"m_DistortionMode\": 0,\n    \"m_DistortionDepthTest\": true,\n   
+    \"m_AddPrecomputedVelocity\": false,\n    \"m_TransparentWritesMotionVec\": false,\n   
+    \"m_DepthOffset\": false,\n    \"m_ConservativeDepthOffset\": false,\n    \"m_TransparencyFog\":
+    true,\n    \"m_AlphaTestShadow\": false,\n    \"m_BackThenFrontRendering\": false,\n   
+    \"m_TransparentDepthPrepass\": false,\n    \"m_TransparentDepthPostpass\": false,\n   
+    \"m_SupportLodCrossFade\": false\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\": \"4a4780603eb545739eedd8c6d007ca89\",\n   
+    \"m_Id\": 0,\n    \"m_DisplayName\": \"Smoothness\",\n    \"m_SlotType\": 0,\n   
+    \"m_Hidden\": false,\n    \"m_ShaderOutputName\": \"Smoothness\",\n    \"m_StageCapability\":
+    2,\n    \"m_Value\": 0.5,\n    \"m_DefaultValue\": 0.5,\n    \"m_Labels\": []\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\n   
+    \"m_ObjectId\": \"4b0082dae9f74a4494a9c57b60c7b7b5\",\n    \"m_Group\": {\n       
+    \"m_Id\": \"\"\n    },\n    \"m_Name\": \"VertexDescription.Tangent\",\n    \"m_DrawState\":
+    {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n            \"width\":
+    0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\": [\n       
+    {\n            \"m_Id\": \"12a936a2bc18421ba336bbfbf6b4d3f6\"\n        }\n   
+    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"VertexDescription.Tangent\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.ColorRGBMaterialSlot\",\n    \"m_ObjectId\": \"5946dc9b1ad44da58255fbd00e92662b\",\n   
+    \"m_Id\": 0,\n    \"m_DisplayName\": \"Emission\",\n    \"m_SlotType\": 0,\n   
+    \"m_Hidden\": false,\n    \"m_ShaderOutputName\": \"Emission\",\n    \"m_StageCapability\":
+    2,\n    \"m_Value\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\":
+    0.0\n    },\n    \"m_DefaultValue\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n       
+    \"z\": 0.0\n    },\n    \"m_Labels\": [],\n    \"m_ColorMode\": 1,\n    \"m_DefaultColor\":
+    {\n        \"r\": 0.0,\n        \"g\": 0.0,\n        \"b\": 0.0,\n        \"a\":
+    1.0\n    }\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\n   
+    \"m_ObjectId\": \"6b941770a29a40b89ff16cc72a3394f0\",\n    \"m_Group\": {\n       
+    \"m_Id\": \"\"\n    },\n    \"m_Name\": \"VertexDescription.Position\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n           
+    \"width\": 0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\":
+    [\n        {\n            \"m_Id\": \"ba3ca9998b6147ebbab9891c9099eeb1\"\n       
+    }\n    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"VertexDescription.Position\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\": \"6baf0f8866fd4905bb0ae265fa41c888\",\n   
+    \"m_Group\": {\n        \"m_Id\": \"\"\n    },\n    \"m_Name\": \"SurfaceDescription.Alpha\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n           
+    \"width\": 0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\":
+    [\n        {\n            \"m_Id\": \"b68f0a778076402581454a6fa601f67f\"\n       
+    }\n    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.Alpha\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\": \"82c744ef537046b28a27104b65ce67ea\",\n   
+    \"m_Group\": {\n        \"m_Id\": \"\"\n    },\n    \"m_Name\": \"VertexDescription.Normal\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n           
+    \"width\": 0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\":
+    [\n        {\n            \"m_Id\": \"461d36dbe06d4c1caaa2f3ebf510fa0c\"\n       
+    }\n    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"VertexDescription.Normal\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.Rendering.HighDefinition.ShaderGraph.HDTarget\",\n    \"m_ObjectId\":
+    \"9472727cbd1d422e85db0a6dd6b0dc7f\",\n    \"m_ActiveSubTarget\": {\n       
+    \"m_Id\": \"aa8239dd40304f7b843b9c3624cd9f2d\"\n    },\n    \"m_Datas\": [\n       
+    {\n            \"m_Id\": \"2a8ada643e2341c0a6f334cb81c9b1b3\"\n        },\n       
+    {\n            \"m_Id\": \"40281943927c4b98910fafe2effb96a2\"\n        },\n       
+    {\n            \"m_Id\": \"48b656e2e5da431cb62bbb6477b6477b\"\n        },\n       
+    {\n            \"m_Id\": \"199aa56856254dc0bf19aa1a1aa82e9e\"\n        }\n   
+    ],\n    \"m_CustomEditorGUI\": \"\",\n    \"m_SupportVFX\": false,\n    \"m_SupportComputeForVertexSetup\":
+    false\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.NormalMaterialSlot\",\n   
+    \"m_ObjectId\": \"956dc8671f044f5bb03ae9100d6d9209\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Normal (Tangent Space)\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\":
+    false,\n    \"m_ShaderOutputName\": \"NormalTS\",\n    \"m_StageCapability\":
+    2,\n    \"m_Value\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\":
+    0.0\n    },\n    \"m_DefaultValue\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n       
+    \"z\": 0.0\n    },\n    \"m_Labels\": [],\n    \"m_Space\": 3\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\":
+    \"9cafa09147124a31b55ca034493e9484\",\n    \"m_Group\": {\n        \"m_Id\":
+    \"\"\n    },\n    \"m_Name\": \"SurfaceDescription.Smoothness\",\n    \"m_DrawState\":
+    {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n            \"width\":
+    0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\": [\n       
+    {\n            \"m_Id\": \"4a4780603eb545739eedd8c6d007ca89\"\n        }\n   
+    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.Smoothness\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\": \"a42b54683a4d4d439b0a43ace5bfc71c\",\n   
+    \"m_Group\": {\n        \"m_Id\": \"\"\n    },\n    \"m_Name\": \"SurfaceDescription.Occlusion\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n           
+    \"width\": 0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\":
+    [\n        {\n            \"m_Id\": \"a8c958f895374bfd8153cd472e88e82d\"\n       
+    }\n    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.Occlusion\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\": \"a5f5708eb6d04d92b8598e5f79a29fc2\",\n   
+    \"m_Group\": {\n        \"m_Id\": \"\"\n    },\n    \"m_Name\": \"SurfaceDescription.BaseColor\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n           
+    \"width\": 0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\":
+    [\n        {\n            \"m_Id\": \"f6250df9c1054c52ad268c9ee361253f\"\n       
+    }\n    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.BaseColor\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\": \"a8c958f895374bfd8153cd472e88e82d\",\n   
+    \"m_Id\": 0,\n    \"m_DisplayName\": \"Ambient Occlusion\",\n    \"m_SlotType\":
+    0,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\": \"Occlusion\",\n   
+    \"m_StageCapability\": 2,\n    \"m_Value\": 1.0,\n    \"m_DefaultValue\": 1.0,\n   
+    \"m_Labels\": []\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.Rendering.HighDefinition.ShaderGraph.HDLitSubTarget\",\n   
+    \"m_ObjectId\": \"aa8239dd40304f7b843b9c3624cd9f2d\"\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\":
+    \"b68f0a778076402581454a6fa601f67f\",\n    \"m_Id\": 0,\n    \"m_DisplayName\":
+    \"Alpha\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"Alpha\",\n    \"m_StageCapability\": 2,\n    \"m_Value\": 1.0,\n    \"m_DefaultValue\":
+    1.0,\n    \"m_Labels\": []\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.PositionMaterialSlot\",\n    \"m_ObjectId\": \"ba3ca9998b6147ebbab9891c9099eeb1\",\n   
+    \"m_Id\": 0,\n    \"m_DisplayName\": \"Position\",\n    \"m_SlotType\": 0,\n   
+    \"m_Hidden\": false,\n    \"m_ShaderOutputName\": \"Position\",\n    \"m_StageCapability\":
+    1,\n    \"m_Value\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\":
+    0.0\n    },\n    \"m_DefaultValue\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n       
+    \"z\": 0.0\n    },\n    \"m_Labels\": [],\n    \"m_Space\": 0\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\":
+    \"cb7fe28a5b064d50945d1beb863a23ad\",\n    \"m_Group\": {\n        \"m_Id\":
+    \"\"\n    },\n    \"m_Name\": \"SurfaceDescription.Emission\",\n    \"m_DrawState\":
+    {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n            \"width\":
+    0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\": [\n       
+    {\n            \"m_Id\": \"5946dc9b1ad44da58255fbd00e92662b\"\n        }\n   
+    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.Emission\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.NormalMaterialSlot\",\n    \"m_ObjectId\": \"e49660227b3343459288c89118c3a485\",\n   
+    \"m_Id\": 0,\n    \"m_DisplayName\": \"Bent Normal\",\n    \"m_SlotType\": 0,\n   
+    \"m_Hidden\": false,\n    \"m_ShaderOutputName\": \"BentNormal\",\n    \"m_StageCapability\":
+    2,\n    \"m_Value\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\":
+    0.0\n    },\n    \"m_DefaultValue\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n       
+    \"z\": 0.0\n    },\n    \"m_Labels\": [],\n    \"m_Space\": 3\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\":
+    \"e9b538d76ed8425ba6c0d0d9d3d91154\",\n    \"m_Group\": {\n        \"m_Id\":
+    \"\"\n    },\n    \"m_Name\": \"SurfaceDescription.NormalTS\",\n    \"m_DrawState\":
+    {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n            \"width\":
+    0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\": [\n       
+    {\n            \"m_Id\": \"956dc8671f044f5bb03ae9100d6d9209\"\n        }\n   
+    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.NormalTS\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.ColorRGBMaterialSlot\",\n    \"m_ObjectId\": \"f6250df9c1054c52ad268c9ee361253f\",\n   
+    \"m_Id\": 0,\n    \"m_DisplayName\": \"Base Color\",\n    \"m_SlotType\": 0,\n   
+    \"m_Hidden\": false,\n    \"m_ShaderOutputName\": \"BaseColor\",\n    \"m_StageCapability\":
+    2,\n    \"m_Value\": {\n        \"x\": 0.5,\n        \"y\": 0.5,\n        \"z\":
+    0.5\n    },\n    \"m_DefaultValue\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n       
+    \"z\": 0.0\n    },\n    \"m_Labels\": [],\n    \"m_ColorMode\": 0,\n    \"m_DefaultColor\":
+    {\n        \"r\": 0.5,\n        \"g\": 0.5,\n        \"b\": 0.5,\n        \"a\":
+    1.0\n    }\n}\n\n"
+  m_AssetMaybeChangedOnDisk: 0
+  m_AssetMaybeDeleted: 0
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1548,57 +581,22 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6629f1bb292b749a18b5fff7994c8b19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 600, y: 350}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Unity Version Control
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 1170
-    width: 2070
-    height: 189
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_OverlaysVisible: 1
-  mForceToOpen: 0
---- !u!114 &14
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
+  m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Game
-    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
+    m_Text: Console
+    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 73
-    width: 1854
-    height: 1076
+    y: 703
+    width: 1292.5
+    height: 363
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1609,71 +607,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-  m_SerializedViewNames: []
-  m_SerializedViewValues: []
-  m_PlayModeViewName: GameView
-  m_ShowGizmos: 0
-  m_TargetDisplay: 0
-  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1854, y: 1055}
-  m_TextureFilterMode: 0
-  m_TextureHideFlags: 61
-  m_RenderIMGUI: 1
-  m_EnterPlayModeBehavior: 0
-  m_UseMipMap: 0
-  m_VSyncEnabled: 0
-  m_Gizmos: 0
-  m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
-  m_ZoomArea:
-    m_HRangeLocked: 0
-    m_VRangeLocked: 0
-    hZoomLockedByDefault: 0
-    vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -927
-    m_HBaseRangeMax: 927
-    m_VBaseRangeMin: -527.5
-    m_VBaseRangeMax: 527.5
-    m_HAllowExceedBaseRangeMin: 1
-    m_HAllowExceedBaseRangeMax: 1
-    m_VAllowExceedBaseRangeMin: 1
-    m_VAllowExceedBaseRangeMax: 1
-    m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
-    m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
-    m_EnableSliderZoomHorizontal: 0
-    m_EnableSliderZoomVertical: 0
-    m_UniformScale: 1
-    m_UpDirection: 1
-    m_DrawArea:
-      serializedVersion: 2
-      x: 0
-      y: 21
-      width: 1854
-      height: 1055
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 927, y: 527.5}
-    m_MarginLeft: 0
-    m_MarginRight: 0
-    m_MarginTop: 0
-    m_MarginBottom: 0
-    m_LastShownAreaInsideMargins:
-      serializedVersion: 2
-      x: -927
-      y: -527.5
-      width: 1854
-      height: 1055
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1854, y: 1076}
-  m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000000000000
-  m_XRRenderMode: 0
-  m_RenderTexture: {fileID: 0}
---- !u!114 &15
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1689,14 +623,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 73
-    width: 1854
-    height: 1076
+    y: 68
+    width: 1100
+    height: 731
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1737,7 +671,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -1763,7 +697,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -1992,9 +926,74 @@ MonoBehaviour:
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 48, y: 48}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: APV Overlay
+      index: 8
+      layout: 4
+      size: {x: 0, y: 0}
+      sizeOverriden: 0
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 48, y: 48}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Visual Effect
+      index: 9
+      layout: 4
+      size: {x: 0, y: 0}
+      sizeOverriden: 0
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 48, y: 48}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Visual Effect Model
+      index: 10
+      layout: 4
+      size: {x: 0, y: 0}
+      sizeOverriden: 0
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 48, y: 48}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Visual Effect Timeline Control
+      index: 11
+      layout: 4
+      size: {x: 0, y: 0}
+      sizeOverriden: 0
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 48, y: 48}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Visual Effect Event Tester
+      index: 12
+      layout: 4
+      size: {x: 0, y: 0}
+      sizeOverriden: 0
     m_OverlaysVisible: 1
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
-  m_Gizmos: 1
+  m_Gizmos: 0
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -2003,9 +1002,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 58.04221, y: 28.932186, z: 10.928777}
+    m_Target: {x: 191.11565, y: 146.10135, z: 176.9472}
     speed: 2
-    m_Value: {x: 58.04221, y: 28.932186, z: 10.928777}
+    m_Value: {x: -70.71179, y: 23.690777, z: -0.6760247}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2051,20 +1050,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.028082475, y: 0.9685735, z: -0.12888691, w: 0.21072364}
+    m_Target: {x: 0.19643423, y: -0.7978625, z: 0.34672508, w: 0.4527847}
     speed: 2
-    m_Value: {x: 0.028082475, y: 0.9685735, z: -0.12888691, w: 0.21072364}
+    m_Value: {x: 0.32842296, y: 0.3734776, z: -0.14303778, w: 0.8558763}
   m_Size:
-    m_Target: 29.811646
+    m_Target: 9.8804655
     speed: 2
-    m_Value: 29.811646
+    m_Value: 9.977382
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_Speed: 1.0014995
+    m_SpeedNormalized: 0.5005
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -2082,6 +1081,104 @@ MonoBehaviour:
   m_SceneVisActive: 0
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Game
+    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 68
+    width: 1100
+    height: 731
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_SerializedViewNames: []
+  m_SerializedViewValues: []
+  m_PlayModeViewName: GameView
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 1100, y: 710}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_EnterPlayModeBehavior: 0
+  m_UseMipMap: 0
+  m_VSyncEnabled: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -275
+    m_HBaseRangeMax: 275
+    m_VBaseRangeMin: -177.5
+    m_VBaseRangeMax: 177.5
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 0
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 21
+      width: 1100
+      height: 710
+    m_Scale: {x: 2, y: 2}
+    m_Translation: {x: 550, y: 355}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -275
+      y: -177.5
+      width: 550
+      height: 355
+    m_MinimalGUI: 1
+  m_defaultScale: 2
+  m_LastWindowPixelSize: {x: 2200, y: 1462}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000000000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -2098,14 +1195,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1855
-    y: 73
-    width: 214
-    height: 1076
+    x: 1101
+    y: 68
+    width: 190.5
+    height: 731
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2121,7 +1218,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 2cfbffff
+      m_ExpandedIDs: 2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2137,7 +1234,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 9}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -2161,14 +1258,14 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 1170
-    width: 2070
-    height: 189
+    y: 820
+    width: 1292.5
+    height: 246
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2190,7 +1287,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Plugins
+    - Assets/Materials
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -2198,16 +1295,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Plugins
+  - Assets/Materials
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\ksgh\unityprojects\test
+  m_LastProjectPath: /Users/ghkasra/unityprojects/Marching_Cubes
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b05b0000
-    m_LastClickedID: 23472
-    m_ExpandedIDs: 00000000b25b0000
+    scrollPos: {x: 0, y: 2.0011902}
+    m_SelectedIDs: de740000
+    m_LastClickedID: 29918
+    m_ExpandedIDs: 000000009273000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2235,7 +1332,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b25b0000
+    m_ExpandedIDs: 0000000092730000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2279,7 +1376,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -2299,15 +1396,15 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6629f1bb292b749a18b5fff7994c8b19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
+  m_MinSize: {x: 600, y: 350}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Console
-    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
+    m_Text: Unity Version Control
+    m_Image: {fileID: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -2325,6 +1422,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
+  mForceToOpen: 0
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -2341,14 +1439,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2071
-    y: 73
-    width: 488
-    height: 1286
+    x: 1293.5
+    y: 68
+    width: 415.5
+    height: 998
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
