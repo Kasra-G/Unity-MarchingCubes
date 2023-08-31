@@ -1,11 +1,5 @@
 {
   "dependencies": {
-    "com.pimdewitte.unitymainthreaddispatcher": {
-      "version": "file:/Users/ghkasra/Downloads/UnityMainThreadDispatcher-master",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
-    },
     "com.unity.burst": {
       "version": "1.8.7",
       "depth": 1,

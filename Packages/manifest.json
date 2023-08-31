@@ -16,7 +16,6 @@
     }
   ],
   "dependencies": {
-    "com.pimdewitte.unitymainthreaddispatcher": "file:/Users/ghkasra/Downloads/UnityMainThreadDispatcher-master",
     "com.unity.collab-proxy": "2.0.5",
     "com.unity.feature.development": "1.0.1",
     "com.unity.render-pipelines.high-definition": "14.0.8",
